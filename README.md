@@ -45,13 +45,6 @@ This macro implements an **alternating fluid-solid solution approach**:
 - Cold plate (aluminum/copper)
 - PCB (FR4, low conductivity)
 
-### Validation
-
-Partitioned approach validated against fully-coupled solution for:
-- Die temperature within 5°C
-- Heat flux through interfaces within 5%
-- Thermal time constants within 10%
-
 ### Usage
 ```java
 // In STAR-CCM+ macro environment:
