@@ -3,7 +3,7 @@
 ## Advanced transient thermal simulation for GPU/electronics cooling
 
 GPU thermal transients present a computational challenge due to vastly different timescales:
-- **Airflow**: Near-steady (milliseconds)
+- **Airflow**: steady
 - **GPU die**: Fast thermal response (10-100 ms)
 - **Heat sink mass**: Slow response (1-10 seconds)
 
