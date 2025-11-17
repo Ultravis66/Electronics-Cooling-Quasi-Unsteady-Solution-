@@ -7,7 +7,7 @@ GPU thermal transients present a computational challenge due to vastly different
 - **GPU die**: Fast thermal response (10-100 ms)
 - **Heat sink mass**: Slow response (1-10 seconds)
 
-Traditional fully-coupled transient CHT requires timesteps of microsecond to maintain stability, making 10-second transients computationally prohibitive (10 million timesteps).
+Traditional fully-coupled transient CHT requires timesteps of microsecond to maintain stability, making 10-second transients computationally prohibitive.
 
 ### Solution: Partitioned CHT Strategy
 
