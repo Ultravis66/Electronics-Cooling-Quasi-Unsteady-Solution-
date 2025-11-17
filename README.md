@@ -1,4 +1,5 @@
 # GPU Partitioned CHT Solver
+# Note: this macro is a work in progress, may have bugs. will update as I test more
 
 ## Advanced transient thermal simulation for GPU/electronics cooling
 
