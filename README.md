@@ -69,6 +69,6 @@ This macro implements an **alternating fluid-solid solution approach**:
 ### ⚠️ Important Note on Numerical Accuracy
 
 This partitioned CHT approach is designed for **fast turnaround** during design exploration and early-stage optimization.  
-Because the fluid and solid domains are advanced separately rather than fully coupled each timestep, this method inherently **sacrifices some numerical accuracy** and **Numerical Errors**.  
+Because the fluid and solid domains are advanced separately rather than fully coupled each timestep, this method inherently **sacrifices some numerical accuracy** and introduces **Numerical Errors**.  
 For high-fidelity validation, fast fluid–thermal interactions, or safety-critical work, a **fully-coupled transient CHT simulation** should be used instead.
 
