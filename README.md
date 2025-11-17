@@ -2,14 +2,12 @@
 
 ## Advanced transient thermal simulation for GPU/electronics cooling
 
-### Problem Statement
-
 GPU thermal transients present a computational challenge due to vastly different timescales:
 - **Airflow**: Near-steady (milliseconds)
 - **GPU die**: Fast thermal response (10-100 ms)
 - **Heat sink mass**: Slow response (1-10 seconds)
 
-Traditional fully-coupled transient CHT requires timesteps of ~1 microsecond to maintain stability, making 10-second transients computationally prohibitive (10 million timesteps).
+Traditional fully-coupled transient CHT requires timesteps of microsecond to maintain stability, making 10-second transients computationally prohibitive (10 million timesteps).
 
 ### Solution: Partitioned CHT Strategy
 
@@ -21,8 +19,6 @@ This macro implements an **alternating fluid-solid solution approach**:
 
 ### Computational Benefits
 
-- **500-1000x speedup** vs fully coupled transient
-- **10 seconds simulated** in ~1000 timesteps (vs 10 million)
 - **Maintains accuracy** for thermal events with timescale >> fluid response
 - **Production-ready** for GPU design optimization
 
@@ -52,7 +48,7 @@ This macro implements an **alternating fluid-solid solution approach**:
 ### Validation
 
 Partitioned approach validated against fully-coupled solution for:
-- Die temperature within 2°C
+- Die temperature within 5°C
 - Heat flux through interfaces within 5%
 - Thermal time constants within 10%
 
@@ -75,3 +71,11 @@ Partitioned approach validated against fully-coupled solution for:
 **Author**: Mitchell Stolk  
 **Application**: GPU/Electronics Thermal Management  
 **Date**: November 2025
+
+
+### ⚠️ Important Note on Numerical Accuracy
+
+This partitioned CHT approach is designed for **fast turnaround** during design exploration and early-stage optimization.  
+Because the fluid and solid domains are advanced separately rather than fully coupled each timestep, this method inherently **sacrifices some numerical accuracy**.  
+For high-fidelity validation, fast fluid–thermal interactions, or safety-critical work, a **fully-coupled transient CHT simulation** should be used instead.
+
