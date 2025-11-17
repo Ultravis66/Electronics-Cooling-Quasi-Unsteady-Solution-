@@ -13,8 +13,8 @@ Traditional fully-coupled transient CHT requires timesteps of microsecond to mai
 
 This macro implements an **alternating fluid-solid solution approach**:
 
-1. **Fluid phase**: Converge steady-state airflow with frozen solid temperatures (30 iterations)
-2. **Solid phase**: Advance transient heat conduction with updated convective BCs (10 ms timestep)
+1. **Fluid phase**: Converge steady-state airflow with frozen solid temperatures
+2. **Solid phase**: Advance transient heat conduction with updated convective BCs
 3. **Repeat**: Alternate until transient completes
 
 ### Computational Benefits
