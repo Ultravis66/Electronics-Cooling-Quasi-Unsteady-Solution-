@@ -74,4 +74,4 @@ Partitioned approach validated against fully-coupled solution for:
 
 **Author**: Mitchell Stolk  
 **Application**: GPU/Electronics Thermal Management  
-**Date**: November 2024
+**Date**: November 2025
