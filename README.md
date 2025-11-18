@@ -53,13 +53,6 @@ This macro implements an **alternating fluid-solid solution approach**:
 // 2. Define boundary conditions (power, inlet conditions)
 // 3. Run this macro to execute partitioned transient solution
 ```
-
-### References
-
-- Partitioned FSI methods (Felippa et al.)
-- Staggered solution approaches for multi-physics
-- GPU thermal management (NVIDIA, AMD thermal design guides)
-
 ---
 
 **Author**: Mitchell Stolk  
