@@ -5,7 +5,7 @@
 - public class MACRO_NAME_HERE extends StarMacro {
 # Edit: The Vapor Chamber and the Fluid Volume must be set to steady state and run together if using a porous medium for your heat sink or you will get the error: No patches found
 - I have not found a way to resolve this issue
-
+- ElectronicsCHTAlternatingMacro.java is a simplified working version where the Vapor Chamber and Fluid Volume are run steady-state while the PCB and Die are run Unsteady
 ## Advanced transient thermal simulation for GPU/electronics cooling
 
 GPU thermal transients present a computational challenge due to vastly different timescales:
