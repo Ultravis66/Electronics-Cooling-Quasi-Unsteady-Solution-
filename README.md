@@ -1,5 +1,10 @@
 # GPU Partitioned CHT Solver
-# Note: this macro is a work in progress, may have bugs. will update as I test more
+# Notes: 
+- this macro is a work in progress
+- Ensure that the name matches the Java macro name here:
+- public class MACRO_NAME_HERE extends StarMacro {
+# Edit: The Vapor Chamber and the Fluid Volume must be set to steady state and run together if using a porous medium for your heat sink. You will get the error: No patches found
+- I have not found a way to resolve this issue
 
 ## Advanced transient thermal simulation for GPU/electronics cooling
 
